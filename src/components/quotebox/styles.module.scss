@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+#background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 2.8rem;
+    // transition: opacity 500ms ease-in;
+    #quote-box {
+        background-color: white;
+        width: 450px;
+        margin: auto;
+        padding: 40px 50px;
+        text-align: center;
+        
+        #text {
+            margin-bottom: 20px;
+            .textIcon {
+                margin-right: 10px;
+            }
+        }
+
+        #author {
+            font-size: 1.6rem;
+            text-align: right;
+            margin-bottom: 25px;
+        }
+
+        #buttonContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a:hover, button:hover {
+                cursor: pointer;
+                opacity: 0.9;
+            }
+            .icon {
+                font-size: 40px;
+            }
+            #new-quote {
+                color: white;
+                padding: 10px;
+                border: none;
+            }
+        }
+    }
+}
